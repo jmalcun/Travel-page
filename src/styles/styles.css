@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(90deg, rgba(142,209,236,1) 4%, rgba(140,171,233,1) 28%, rgba(64,106,228,1) 50%, rgba(65,46,236,1) 83%, rgba(65,8,238,0.44861694677871145) 97%);
+    
+}
+
+.container{
+    width: 100%;
+    height: 900px;
+}
+
+/*GENERALES*/
+.color-blue{
+    background: #7559E8;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+/*HEADER*/
+.header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+}
+
+.logo{
+    width: 20.4%;
+    display: flex;
+    align-items: center;
+    animation: logo 1.5s ease;   
+}
+
+@keyframes logo{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+.logo div{
+    margin-left: 35px;
+}
+
+/*BUSQUEDA*/
+.busqueda{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.busqueda input{
+    width: 479px;
+    height: 36px;
+    background: #EEEEEE;
+    border-radius: 23px;
+    padding-left: 15px;
+    outline: none;
+    border: none;
+}
+
+/*USUARIO*/
+.company-details{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-right: 19px;
+}
+
+.company-details p{
+    color: white;
+    font-size: 25px;
+    animation: details 1.5s ease;
+}
+
+@keyframes details{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+.photo-perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-perfil h3{
+    font-size: 25px;
+    color: white;
+}
+
+
+/*CENTER-PAGE*/
+.center-page{
+    width: 100%;
+    height: 810px;
+    display: flex;
+}
+
+/*SECTION-MENU*/
+.menu{
+    width: 20.4%;
+    height: 50%;
+    background-color: #8cabe9;
+    box-shadow: 10px 2px 5px 0px rgba(0,0,0,0.75);
+    margin-top: 25px;
+}
+
+.menu-items{
+    width: 100%;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    margin-top: 29px;
+    cursor: pointer;
+}
+
+.menu-items:hover{
+    background: linear-gradient(90deg, rgba(142,209,236,1) 4%, rgba(140,171,233,1) 28%, rgba(64,106,228,1) 50%, rgba(65,46,236,1) 83%, rgba(65,8,238,0.9920343137254902) 97%);
+}
+
+.menu-items img{
+    margin-right: 25px;
+}
+
+.center{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*WELCOME-PAGE*/
+.welcome{
+    width: 100%;
+    height: 100%;
+}
+
+.welcome h1{
+    font-family: 'Crimson Text';
+    font-size: 80px;
+    color: #575454;
+    text-align: center;
+    padding-top: 20px;
+    animation: traslado 1s ease;
+}
+
+@keyframes traslado{
+    from{
+        transform: translateY(-300%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+
+.welcome span{
+    color: white;
+}
+
+.choices{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choice{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border: 4px solid #4E4E4E;
+    cursor: pointer;
+}
+
+.choice p{
+    font-family: 'Crimson Text';
+    color: #7a7a7a;
+    font-size: 35px;
+}
+
+.choice:hover{
+    opacity: 0.5;
+}
+
+.choice:hover p{
+    color:#0676f7;
+    font-size: 50px;
+}
+
+.hotel{
+    background-image: url('../assets/imgs/hotel.jpg');
+    background-size: 100%;
+    background-position-y: 65%;
+    opacity: 0.8;
+    animation: hotel 2.5s ease;
+}
+
+@keyframes hotel{
+    from{
+        transform: translateX(-300%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+.avion{
+    background-image: url('../assets/imgs/vuelo.jpg');
+    background-size: 100%;
+    background-position-y: 30%;
+    opacity: 0.8;
+    animation: avion 3s ease;
+}
+
+@keyframes avion{
+    from{
+        transform: translateX(300%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+.auto{
+    background-image: url('../assets/imgs/auto.jpg');
+    background-size: 100%;
+    background-position-y: 55%;
+    opacity: 0.8;
+    animation: auto 3.5s ease;
+}
+
+@keyframes auto{
+    from{
+        transform: translateX(-300%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+.tours{
+    background-image: url('../assets/imgs/tours.jpg');
+    background-size: 100%;
+    background-position-y: 22%;
+    opacity: 0.8;
+    animation: tours 4s ease;
+}
+
+@keyframes tours{
+    from{
+        transform: translateX(300%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+.welcome h1 .choice:first-child{
+    margin-top: 25px;
+}
+
+/*FIND-HOTEL*/
+.find-hotel{
+    width: 97%;
+    height: 50%;
+    background-image: url('../assets/imgs/hotel2.jpg');
+    background-size: 100% 100% ;
+    opacity: 0.8;
+    margin-left: 20px;
+    margin-top: 22px;
+}
+
+.find-hotel h1{
+    font-family: 'Crimson Text';
+    font-size: 70px;
+    color: #7a7a7a;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.find-hotel input{
+    width: 479px;
+    height: 36px;
+    background: #EEEEEE;
+    border-radius: 23px;
+    padding-left: 15px;
+    outline: none;
+    border: none;
+    margin-left: 297px;
+}
+
+/*FIND-FLIGHT*/
+.find-flight{
+    width: 97%;
+    height: 50%;
+    background-image: url('../assets/imgs/volando.jpg');
+    background-size: 100% 100% ;
+    opacity: 0.8;
+    margin-left: 20px;
+    margin-top: 22px;
+}
+
+.find-flight h1{
+    font-family: 'Crimson Text';
+    font-size: 70px;
+    color: #7a7a7a;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.find-flight input{
+    width: 479px;
+    height: 36px;
+    background: #EEEEEE;
+    border-radius: 23px;
+    padding-left: 15px;
+    outline: none;
+    border: none;
+    margin-left: 297px;
+}
+
+/*FIND-CAR*/
+.find-car{
+    width: 97%;
+    height: 50%;
+    background-image: url('../assets/imgs/auto.jpg');
+    background-size: 100% 100% ;
+    opacity: 0.8;
+    margin-left: 20px;
+    margin-top: 22px;
+}
+
+.find-car h1{
+    font-family: 'Crimson Text';
+    font-size: 70px;
+    color: #7a7a7a;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.find-car input{
+    width: 479px;
+    height: 36px;
+    background: #EEEEEE;
+    border-radius: 23px;
+    padding-left: 15px;
+    outline: none;
+    border: none;
+    margin-left: 297px;
+}
+
+/*FIND-TOURS*/
+.find-tours{
+    width: 97%;
+    height: 50%;
+    background-image: url('../assets/imgs/tours.jpg');
+    background-size: 100% 100% ;
+    opacity: 0.8;
+    margin-left: 20px;
+    margin-top: 22px;
+}
+
+.find-tours h1{
+    font-family: 'Crimson Text';
+    font-size: 70px;
+    color: #7a7a7a;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.find-tours input{
+    width: 479px;
+    height: 36px;
+    background: #EEEEEE;
+    border-radius: 23px;
+    padding-left: 15px;
+    outline: none;
+    border: none;
+    margin-left: 297px;
+}
+
+
+/*FOTOS*/
+.photos-container{
+    width: 100%;
+    height: 189px;
+    display: flex;
+}
+
+.photos-container img{
+    width: 319px;
+    height: 100%;
+}
+
+/*DESCRIPTION*/
+.description{
+    width: 100%;
+    height: 101px;
+    display: flex;
+}
+
+.description-detalles{
+    width: 87.5%;
+    display: flex;
+}
+
+.hotel-name{
+    width: 50%;
+    height: 101px;
+    display: flex;
+    align-items: center;
+}
+
+.hotel-name h4{
+    font-size: 24px;
+    line-height: 28px;
+    color: #8B8B8B;
+    margin-left: 46px;
+    margin-right: 20px;
+}
+
+.ubication{
+    width: 50%;
+    height: 101px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.ubication i{
+    margin-right: 10px;
+}
+
+.ubication p{
+    margin-right: 25px;
+}
+
+.puntaje{
+    background-color: #7559E8;
+    width: 12.5%;
+    height: 101px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.numero{
+    font-size: 24px;
+    line-height: 28px;
+    color: white;
+}
+
+.votes{
+    font-size: 9px;
+    line-height: 11px;
+    color: white;
+}
+
+/*CONTENIDO PRINCIPAL*/
+.contenido-principal{
+    width: 100%;
+    height: 377px;
+    background-color: #EEEEEE;
+}
+
+
+/*FOOTER*/
+.footer{
+    width: 100%;
+    height: 143px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: white;
+}
+
+.footer button{
+    width: 254px;
+    height: 51px;
+    border: 3px solid #4921ED;
+    border-radius: 36px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #262626;
+    margin-top: 11px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.footer button:hover{
+    background: lightskyblue;
+}
+
