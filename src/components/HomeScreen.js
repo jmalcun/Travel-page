@@ -1,8 +1,5 @@
 import React, { useState } from 'react'
-import { FindFlight } from './FindFlight'
-import { FindHotel } from './FindHotel'
 import { Menu } from './Menu'
-import { Navbar } from './Navbar'
 import { WelcomePage } from './WelcomePage'
 
 export const HomeScreen = () => {

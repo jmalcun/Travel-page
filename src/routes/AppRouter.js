@@ -6,12 +6,14 @@ import {
     Link,
     Redirect
   } from "react-router-dom";
-import { CarRental } from '../components/CarRental';
-import { FindFlight } from '../components/FindFlight';
-import { FindHotel } from '../components/FindHotel';
+import { CarRental } from '../components/car/CarRental';
+import { FindFlight } from '../components/flight/FindFlight';
 import { HomeScreen } from '../components/HomeScreen';
+import { FindHotel } from '../components/hotels/FindHotel';
+import { HotelDisponible } from '../components/hotels/HotelDisponible';
 import { Navbar } from '../components/Navbar';
-import { Tours } from '../components/Tours';
+import { Tours } from '../components/tours/Tours';
+
 
 
 export const AppRouter = () => {
@@ -27,6 +29,7 @@ export const AppRouter = () => {
                     <Route exact path="/flight" component={FindFlight}/>
                     <Route exact path="/car" component={CarRental}/>
                     <Route exact path="/tours" component={Tours}/>
+                    <Route exact path="/find-hotel" component={HotelDisponible} />
                     <Redirect to="/home"/>
                 </Switch>
             

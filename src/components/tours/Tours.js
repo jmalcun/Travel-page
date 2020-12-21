@@ -1,18 +1,19 @@
 import React from 'react'
-import { Menu } from './Menu'
+import { Menu } from '../Menu'
 
-export const CarRental = () => {
+
+export const Tours = () => {
     return (
         <>
-          <div className="container">
+           <div className="container">
                 <div className="center-page">
                     <Menu  />
                     <div className="center">
-                        <div className="find-car">
-                            <h1>Find your car</h1>
+                        <div className="find-tours">
+                            <h1>Find your tours</h1>
                             <input 
                                 type="search"
-                                placeholder="Search car"
+                                placeholder="Search tour"
                             />
                         </div>
                         <footer class="footer">
@@ -23,7 +24,7 @@ export const CarRental = () => {
                         </footer>  
                     </div>     
                 </div>  
-            </div>  
+            </div> 
         </>
     )
 }

@@ -8,7 +8,7 @@
 }
 
 body{
-    background: linear-gradient(90deg, rgba(142,209,236,1) 4%, rgba(140,171,233,1) 28%, rgba(64,106,228,1) 50%, rgba(65,46,236,1) 83%, rgba(65,8,238,0.44861694677871145) 97%);
+    background: linear-gradient(90deg, rgba(142,209,236,1) 4%, rgba(140,171,233,1) 32%, rgba(64,106,228,1) 60%, rgba(83,65,242,1) 89%, rgba(123,193,212,1) 99%);
     
 }
 
@@ -27,6 +27,24 @@ body{
     color: black;
 }
 
+.btn{
+    width: 254px;
+    height: 51px;
+    border: 3px solid #4921ED;
+    border-radius: 36px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #262626;
+    background-color: white;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 25px;
+    outline: none;
+}
+
+.btn:hover{
+    background: lightskyblue;
+}
 /*HEADER*/
 .header{
     width: 100%;
@@ -118,10 +136,23 @@ body{
 /*SECTION-MENU*/
 .menu{
     width: 20.4%;
-    height: 50%;
+    height: 380px;
     background-color: #8cabe9;
     box-shadow: 10px 2px 5px 0px rgba(0,0,0,0.75);
-    margin-top: 25px;
+    margin-top: 50px;
+}
+
+.animation-menu{
+    animation: menutraslado 4s ease;
+} 
+
+@keyframes menutraslado{
+    from{
+        transform: translateX(-300%);
+    }
+    to{
+        transform: translateX(0%);
+    }
 }
 
 .menu-items{
@@ -142,11 +173,30 @@ body{
     margin-right: 25px;
 }
 
+/*CENTER*/
 .center{
     width: 80%;
-    height: 100%;
+    height: 810px;
     display: flex;
     flex-direction: column;
+    margin-top: 25px;
+}
+
+.center-find{
+    width: 100%;
+    height: 430px;
+    display: flex;
+}
+
+
+.center-find-1{
+    width: 80%;
+    height: 88.6%;
+    margin-top: 50px;
+}
+
+.hotel-form-page{
+    margin-top: 25px;
 }
 
 /*WELCOME-PAGE*/
@@ -158,7 +208,7 @@ body{
 .welcome h1{
     font-family: 'Crimson Text';
     font-size: 80px;
-    color: #575454;
+    color: #131010;
     text-align: center;
     padding-top: 20px;
     animation: traslado 1s ease;
@@ -285,20 +335,19 @@ body{
 /*FIND-HOTEL*/
 .find-hotel{
     width: 97%;
-    height: 50%;
+    height: 100%;
     background-image: url('../assets/imgs/hotel2.jpg');
     background-size: 100% 100% ;
-    opacity: 0.8;
-    margin-left: 20px;
-    margin-top: 22px;
+    opacity: 0.8; 
+    margin-left: 20px;  
 }
 
-.find-hotel h1{
+.titulo{
     font-family: 'Crimson Text';
     font-size: 70px;
-    color: #7a7a7a;
+    color: #0f0f0f;
     text-align: center;
-    padding-top: 50px;
+    margin-top: 25px;
 }
 
 .find-hotel input{
@@ -310,6 +359,115 @@ body{
     outline: none;
     border: none;
     margin-left: 297px;
+}
+
+/*FORM-HOTEL*/
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label{
+    text-align: center;
+    font-family: 'Crimson Text';
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+.formulario input{
+    width: 50%;
+    height: 30px;
+    margin: 0 auto;
+    border-radius: 20px;
+    outline: none;
+    padding-left: 25px;
+}
+
+/*HOTEL-DISPONIBLE*/
+.form-data{
+    width: 90%;
+    height: 380px;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form-data h4{
+    font-family: 'Crimson Text';
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+.form-data p{
+    font-family: 'Crimson Text';
+    font-size: 45px;
+    text-align: center;
+    color: #7fbfe4;
+}
+
+/*CARD-HOTEL*/
+.card-contain{
+    display: flex;
+    justify-content: center;
+}
+
+.card-hotel{
+    width: 250px;
+    height: 300px;
+    border: 1px solid #4E4E4E;
+    border-radius: 20px;
+    margin-right: 15px;
+}
+
+.card-img{
+    width: 100%;
+    height: 50%; 
+}
+
+.card-img img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-description{
+    margin-top: 20px;
+}
+
+.card-description h4{
+    font-size: 22px;
+    padding-left: 5px;
+}
+
+.card-description p{
+    font-size: 15px;
+    color: #6b6565;
+    padding-left: 5px;
+}
+
+.card-hotel button{
+    width: 150px;
+    height: 25px;
+    border: 1px solid white;
+    border-radius: 36px;
+    font-size: 15px;
+    line-height: 21px;
+    color: white;
+    background-color: #3766c2;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 25px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+}
+
+.card-hotel button:hover{
+    transform: scale(1.1);
+    background-color: #071e4d;
 }
 
 /*FIND-FLIGHT*/
@@ -503,22 +661,5 @@ body{
     font-size: 18px;
     line-height: 21px;
     color: white;
-}
-
-.footer button{
-    width: 254px;
-    height: 51px;
-    border: 3px solid #4921ED;
-    border-radius: 36px;
-    font-size: 18px;
-    line-height: 21px;
-    color: #262626;
-    margin-top: 11px;
-    background-color: white;
-    cursor: pointer;
-}
-
-.footer button:hover{
-    background: lightskyblue;
 }
 

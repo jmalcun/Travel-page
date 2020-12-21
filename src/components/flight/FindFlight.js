@@ -1,18 +1,20 @@
 import React from 'react'
-import { Menu } from './Menu'
+import { Menu } from '../Menu'
 
-export const FindHotel = () => {
-    
+
+export const FindFlight = () => {
     
     
     return (
+
         <>
-        <div className="container">
+            <div className="container">
                 <div className="center-page">
-                    <Menu/>
+                    <Menu  />
                     <div className="center">
-                        <div className="find-hotel">
-                            <h1>Find your hotel</h1>
+                        <div className="find-flight">
+                            <h1>Find your flight</h1>
+                           
                         </div>
                         <footer class="footer">
                             <div class="footer-description">
@@ -22,9 +24,7 @@ export const FindHotel = () => {
                         </footer>  
                     </div>     
                 </div>  
-        </div>
-            
-
+            </div>
         </>
     )
 }
