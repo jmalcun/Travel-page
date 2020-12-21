@@ -45,6 +45,15 @@ body{
 .btn:hover{
     background: lightskyblue;
 }
+
+.loading-box{
+
+}
+
+.loading-box h1{
+    text-align: center;
+}
+
 /*HEADER*/
 .header{
     width: 100%;
