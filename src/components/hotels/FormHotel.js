@@ -8,10 +8,12 @@ export const FormHotel = ({setBusqueda}) => {
     const [formValues, setFormValues] = useState({
         destino:'',
         entrada:'',
-        salida:''
+        salida:'',
+        adultos:'',
+        niños:''
     })
     
-    const {destino, entrada, salida} = formValues
+    const {destino, entrada, salida, adultos, niños} = formValues
 
     const handleInputChange = ({target}) => {
         setFormValues({
@@ -33,7 +35,7 @@ export const FormHotel = ({setBusqueda}) => {
     }
 
     const formValidator = () =>{
-        if(destino === '' || entrada === '' || salida === ''){
+        if(destino === '' || entrada === '' || salida === '' ){
             return false
         }else{
             return true
@@ -66,10 +68,25 @@ export const FormHotel = ({setBusqueda}) => {
                         value={salida}
                         onChange={handleInputChange}
                     />
+                    <div className="habitaciones">
+                        <label>Adults</label>
+                        <select name="adultos" value={adultos} onChange={handleInputChange}>
+                            <option value="uno">1</option>
+                            <option value="dos">2</option>
+                            <option value="tres">3</option>
+                            <option value="cuatro">4</option>
+                        </select>
+                        <label>Childrens</label>
+                        <select name="niños" value={niños} onChange={handleInputChange}>
+                            <option value="cero">0</option>
+                            <option value="uno">1</option>
+                            <option value="dos">2</option>
+                            <option value="tres">3</option>
+                        </select>
+                    </div>
                     <button 
                     className="btn" 
                     type="submit"
-                    
                     >Search Hotels
                     </button>           
                 </form>

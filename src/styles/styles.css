@@ -14,7 +14,7 @@ body{
 
 .container{
     width: 100%;
-    height: 900px;
+    height: 915px;
 }
 
 /*GENERALES*/
@@ -44,10 +44,6 @@ body{
 
 .btn:hover{
     background: lightskyblue;
-}
-
-.loading-box{
-
 }
 
 .loading-box h1{
@@ -374,6 +370,7 @@ body{
 .formulario{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .formulario label{
@@ -390,6 +387,19 @@ body{
     border-radius: 20px;
     outline: none;
     padding-left: 25px;
+}
+
+.habitaciones{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.habitaciones label{
+    margin-right: 10px;
+}
+
+.habitaciones select{
+    margin-right: 20px;
 }
 
 /*HOTEL-DISPONIBLE*/
