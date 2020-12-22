@@ -1,30 +1,39 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Menu } from '../Menu'
+import { FlightDisponible } from './FlightDisponible'
+import { FormFlight } from './FormFlight'
 
 
 export const FindFlight = () => {
     
+
+    const [dataVuelo, setDataVuelo] = useState({})
+
+    console.log(dataVuelo)
+
     
     return (
 
         <>
-            <div className="container">
-                <div className="center-page">
-                    <Menu  />
-                    <div className="center">
-                        <div className="find-flight">
-                            <h1>Find your flight</h1>
-                           
-                        </div>
-                        <footer class="footer">
-                            <div class="footer-description">
-                                <p>GOOD NEWS! WE HAVE 4 FREE ROOMS FOR YOUR SELECTED DATES!</p>
+            {
+                (Object.keys(dataVuelo).length !== 0)
+                        ? <FlightDisponible dataVuelo={dataVuelo} />
+                        : <div className="container">
+                                <div className="center-find">
+                                    <Menu  />
+                                    <div className="center-find-1">
+                                        <div className="find-flight"></div>
+                                    </div>  
+                                </div>           
+                                <div className="form-hotel-page">
+                                    <h1 className="titulo">Encontra tu vuelo</h1>
+                                    <FormFlight setDataVuelo={setDataVuelo} />
+                                </div>       
                             </div>
-                            <button class="btn">BOOK NOW</button>
-                        </footer>  
-                    </div>     
-                </div>  
-            </div>
+            }
+
+
+            
         </>
     )
 }

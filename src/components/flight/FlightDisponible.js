@@ -1,49 +1,53 @@
-import moment from 'moment'
 import React, { useState } from 'react'
-import { Loading } from '../Loading'
-import { Menu } from '../Menu'
-import { CardHotel } from './CardHotel'
+import { Loading } from '../Loading';
+import { Menu } from '../Menu';
+import moment from 'moment'
 
-export const HotelDisponible = ({busqueda}) => {
+export const FlightDisponible = ({dataVuelo}) => {
 
-    const { destino,entrada,salida,adultos,niños} = busqueda
 
-    const [loading, setLoading] = useState(true)
 
-    let fechaEntrada = moment(entrada).format('DD-MM-YYYY')
-    let fechaSalida = moment(salida).format('DD-MM-YYYY')
+    const [loadingg, setLoadingg] = useState(true)
 
     setTimeout(() => {
-        setLoading(false)    
+        setLoadingg(false)    
     }, 2000);
+
+
+    const {origenVuelo, destinoVuelo, ida, vuelta, pasajerosMayores, pasajerosMenores} = dataVuelo
+
+    let fechaIda = moment(ida).format('DD-MM-YYYY')
+    let fechaVuelta = moment(vuelta).format('DD-MM-YYYY')
 
     return (
         <>
             {
-                (loading)
+                (loadingg)
                     ? <Loading />
                     :<div className="container">
                         <div className="center-find">
                             <Menu/>
                             <div className="center-find-1">
                                 <div className="form-data">
+                                    <h4>Origen:</h4>
+                                    <p>{origenVuelo}</p>
                                     <h4>Destino:</h4>
-                                    <p>{destino}</p>
+                                    <p>{destinoVuelo}</p>
                                     <h4>Fecha de salida:</h4>
-                                    <p>{fechaEntrada}</p>
+                                    <p>{fechaIda}</p>
                                     <h4>Fecha de regreso:</h4>
-                                    <p>{salida}</p>
+                                    <p>{fechaVuelta}</p>
                                     <h4>Pasajeros:</h4>
                                     <div className="pasajeros">
-                                        <p>{adultos} Adultos</p><p>{niños} Menores</p>
+                                        <p>{pasajerosMayores} Adultos</p><p>{pasajerosMenores} Menores</p>
                                     </div> 
                                 </div> 
                             </div>     
                         </div> 
                         <div className="form-hotel-page">
-                            <h1 className="titulo">Elegi tu hotel</h1>
+                            <h1 className="titulo">Elegi tu vuelo</h1>
                             <div className="card-contain">
-                                <CardHotel />
+                                
                             </div>
                         
                         </div>  

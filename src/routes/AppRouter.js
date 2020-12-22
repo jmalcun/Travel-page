@@ -8,6 +8,7 @@ import {
   } from "react-router-dom";
 import { CarRental } from '../components/car/CarRental';
 import { FindFlight } from '../components/flight/FindFlight';
+import { FlightDisponible } from '../components/flight/FlightDisponible';
 import { HomeScreen } from '../components/HomeScreen';
 import { FindHotel } from '../components/hotels/FindHotel';
 import { HotelDisponible } from '../components/hotels/HotelDisponible';
@@ -30,6 +31,7 @@ export const AppRouter = () => {
                     <Route exact path="/car" component={CarRental}/>
                     <Route exact path="/tours" component={Tours}/>
                     <Route exact path="/find-hotel" component={HotelDisponible} />
+                    <Route exact path="/find-flight" component={FlightDisponible} />
                     <Redirect to="/home"/>
                 </Switch>
             

@@ -414,16 +414,23 @@ body{
 
 .form-data h4{
     font-family: 'Crimson Text';
-    font-size: 40px;
+    font-size: 25px;
     text-align: center;
     
 }
 
 .form-data p{
     font-family: 'Crimson Text';
-    font-size: 45px;
+    font-size: 30px;
     text-align: center;
     color: #7fbfe4;
+}
+
+.pasajeros{
+    margin:  0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
 }
 
 /*CARD-HOTEL*/
@@ -492,12 +499,11 @@ body{
 /*FIND-FLIGHT*/
 .find-flight{
     width: 97%;
-    height: 50%;
+    height: 100%;
     background-image: url('../assets/imgs/volando.jpg');
     background-size: 100% 100% ;
     opacity: 0.8;
     margin-left: 20px;
-    margin-top: 22px;
 }
 
 .find-flight h1{
