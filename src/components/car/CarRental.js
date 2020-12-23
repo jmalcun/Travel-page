@@ -1,29 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Menu } from '../Menu'
+import { FormCar } from './FormCar'
+
 
 export const CarRental = () => {
+
+    const [auto, setAuto] = useState({})
+
     return (
         <>
-          <div className="container">
-                <div className="center-page">
-                    <Menu  />
-                    <div className="center">
-                        <div className="find-car">
-                            <h1>Find your car</h1>
-                            <input 
-                                type="search"
-                                placeholder="Search car"
-                            />
+                        <div className="container">
+                            <div className="center-find">
+                                <Menu/>
+                                <div className="center-find-1">
+                                    <div className="find-car"></div>
+                                </div>     
+                            </div> 
+                            <div className="form-hotel-page">
+                                <h1 className="titulo">Encontra tu auto</h1>
+                                <FormCar setAuto={setAuto} />
+                            </div>  
                         </div>
-                        <footer class="footer">
-                            <div class="footer-description">
-                                <p>GOOD NEWS! WE HAVE 4 FREE ROOMS FOR YOUR SELECTED DATES!</p>
-                            </div>
-                            <button class="btn">BOOK NOW</button>
-                        </footer>  
-                    </div>     
-                </div>  
-            </div>  
         </>
     )
 }
+
+                        

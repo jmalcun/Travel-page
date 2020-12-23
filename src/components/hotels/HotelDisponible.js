@@ -32,7 +32,7 @@ export const HotelDisponible = ({busqueda}) => {
                                     <h4>Fecha de salida:</h4>
                                     <p>{fechaEntrada}</p>
                                     <h4>Fecha de regreso:</h4>
-                                    <p>{salida}</p>
+                                    <p>{fechaSalida}</p>
                                     <h4>Pasajeros:</h4>
                                     <div className="pasajeros">
                                         <p>{adultos} Adultos</p><p>{niños} Menores</p>

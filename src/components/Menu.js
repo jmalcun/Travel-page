@@ -31,7 +31,7 @@ export const Menu = () => {
                 >
                 <div className="menu-items" >
                     <img src={avion} alt="Flight"/>
-                    <p>FLIGHT</p>
+                    <p>VUELO</p>
                 </div>
                 </NavLink>
                 <NavLink 
@@ -42,7 +42,7 @@ export const Menu = () => {
                 >
                 <div className="menu-items">
                     <img src={llave} alt="car"/>
-                    <p>CAR RENTAL</p>
+                    <p>AUTO</p>
                 </div>
                 </NavLink>
                 <NavLink 

@@ -66,7 +66,7 @@ export const FormFlight = ({setDataVuelo}) => {
                         onChange={handleInputChangeVuelo}
                         placeholder="Country, City"
                     />
-                    <label>Fecha de ida</label>
+                    <label>Fecha de salida</label>
                     <input 
                         type="date"
                         name="ida"
@@ -83,6 +83,7 @@ export const FormFlight = ({setDataVuelo}) => {
                     <div className="habitaciones">
                         <label>Adultos</label>
                         <select name="pasajerosMayores" value={pasajerosMayores} onChange={handleInputChangeVuelo}>
+                            <option value="-">0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -94,6 +95,7 @@ export const FormFlight = ({setDataVuelo}) => {
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
+                            <option value="4">4</option>
                         </select>
                     </div>
                     <button 

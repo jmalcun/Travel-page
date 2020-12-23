@@ -35,7 +35,7 @@ export const FormHotel = ({setBusqueda}) => {
     }
 
     const formValidator = () =>{
-        if(destino === '' || entrada === '' || salida === '' ){
+        if(destino === '' || entrada === '' || salida === '' || adultos === '' || niños === '' ){
             return false
         }else{
             return true
@@ -71,17 +71,18 @@ export const FormHotel = ({setBusqueda}) => {
                     <div className="habitaciones">
                         <label>Adults</label>
                         <select name="adultos" value={adultos} onChange={handleInputChange}>
-                            <option value="uno">1</option>
-                            <option value="dos">2</option>
-                            <option value="tres">3</option>
-                            <option value="cuatro">4</option>
+                            <option value="-">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
                         </select>
                         <label>Childrens</label>
                         <select name="niños" value={niños} onChange={handleInputChange}>
-                            <option value="cero">0</option>
-                            <option value="uno">1</option>
-                            <option value="dos">2</option>
-                            <option value="tres">3</option>
+                            <option value="-">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
                         </select>
                     </div>
                     <button 
