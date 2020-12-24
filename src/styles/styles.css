@@ -194,7 +194,7 @@ body{
 .menu{
     width: 20.4%;
     height: 380px;
-    background-color: #8cabe9;
+    background-color: darkblue;
     box-shadow: 10px 2px 5px 0px rgba(0,0,0,0.75);
     margin-top: 50px;
 }
@@ -220,6 +220,10 @@ body{
     padding-left: 40px;
     margin-top: 29px;
     cursor: pointer;
+}
+
+.menu-items p{
+    color: white;
 }
 
 .menu-items:hover{
