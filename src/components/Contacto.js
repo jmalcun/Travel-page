@@ -28,10 +28,7 @@ export const Contacto = () => {
                         <div className="redes">
                             <a href="#"><i class="fas fa-map-marker-alt"></i></a>
                             <p>Jerónimo Salguero 3172, C1425 CABA</p>
-                        </div>
-                        <div className="nosotros-footer">
-                            <p>JM-travel</p>
-                        </div>   
+                        </div> 
                     </div>
                 </div> 
             </div>     

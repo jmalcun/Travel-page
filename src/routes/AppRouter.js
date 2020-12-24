@@ -16,6 +16,7 @@ import { FindHotel } from '../components/hotels/FindHotel';
 import { HotelDisponible } from '../components/hotels/HotelDisponible';
 import { Navbar } from '../components/Navbar';
 import { Nosotros } from '../components/Nosotros';
+import { Servicios } from '../components/Servicios';
 import { Tours } from '../components/tours/Tours';
 
 
@@ -30,6 +31,7 @@ export const AppRouter = () => {
                 <Switch>
                     <Route exact path="/home" component={HomeScreen}/>
                     <Route exact path="/nosotros" component={Nosotros}/>
+                    <Route exact path="/servicios" component={Servicios}/>
                     <Route exact path="/contacto" component={Contacto}/>
                     <Route exact path="/hotel" component={FindHotel}/>
                     <Route exact path="/flight" component={FindFlight}/>
