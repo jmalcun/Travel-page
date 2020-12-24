@@ -53,7 +53,7 @@ export const Menu = () => {
                 >
                 <div className="menu-items" >
                     <img src={tours} alt="tours"/>
-                    <p>TOURS</p>
+                    <p>EXCURSIONES</p>
                 </div>
                 </NavLink>
             </section>  

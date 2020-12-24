@@ -3,28 +3,32 @@ import { Menu } from '../Menu'
 
 
 export const Tours = () => {
+
+    
+
+
     return (
         <>
            <div className="container">
-                <div className="center-page">
+                <div className="center-find">
                     <Menu  />
-                    <div className="center">
+                    <div className="center-find-1">
                         <div className="find-tours">
-                            <h1>Find your tours</h1>
-                            <input 
-                                type="search"
-                                placeholder="Search tour"
-                            />
-                        </div>
-                        <footer class="footer">
-                            <div class="footer-description">
-                                <p>GOOD NEWS! WE HAVE 4 FREE ROOMS FOR YOUR SELECTED DATES!</p>
-                            </div>
-                            <button class="btn">BOOK NOW</button>
-                        </footer>  
-                    </div>     
-                </div>  
-            </div> 
+                            
+                        </div> 
+                    </div>
+                </div>
+                <div className="form-hotel-page">
+                        <h1 className="titulo">Excursiones</h1>
+                        <input 
+                            className="tour-input"
+                            type="search"
+                            placeholder="City"
+                        />
+                    </div>      
+                </div> 
         </>
     )
 }
+
+

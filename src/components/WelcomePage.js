@@ -10,7 +10,8 @@ export const WelcomePage = () => {
         <>
             
             <div className="welcome">
-                <h1>Bienvenido a <span>JM-Travel</span></h1>
+                <h1>Hace realidad el viaje de tus sueños</h1>
+                
                 <div className="choices">
                     <NavLink 
                         activeClassName="active"
@@ -19,7 +20,7 @@ export const WelcomePage = () => {
                         to="/hotel"
                     >
                         <div>
-                            <p>El hotel de tus sueños</p>
+                            <p>Hoteles</p>
                         </div>
                     </NavLink>
                     <NavLink 
@@ -29,7 +30,7 @@ export const WelcomePage = () => {
                         to="/flight"
                     >
                         <div>
-                            <p>Tu vuelo</p>
+                            <p>Vuelos</p>
                         </div>
                     </NavLink>
                     <NavLink 
@@ -39,7 +40,7 @@ export const WelcomePage = () => {
                         to="/car"
                     >
                         <div>
-                            <p>Tu auto</p>
+                            <p>Autos</p>
                         </div>
                     </NavLink>
                     <NavLink 
@@ -49,7 +50,7 @@ export const WelcomePage = () => {
                         to="/car"
                     >
                         <div className="">
-                            <p>Tus tours</p>
+                            <p>Excursiones</p>
                         </div>  
                     </NavLink>  
                        

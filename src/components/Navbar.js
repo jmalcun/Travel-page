@@ -16,18 +16,37 @@ export const Navbar = () => {
                             exact
                             to="/home"
                         >
-                            <h3>JM-Travel</h3>
+                            <h3>JM Travel</h3>
                         </NavLink>    
                     </div>
                 </div>
-                <div className="busqueda">
-                    <input 
-                        type="search" 
-                        placeholder="Search hotels"
-                    />
-                </div>
                 <div className="company-details">
-                    <p>hotels, flights, car rental and tours</p>
+                    <ul>
+                        <li>
+                            <NavLink
+                                activeClassName="active"
+                                className="link"
+                                exact
+                                to="/nosotros"
+                            > <p>¿Quienes somos?</p> </NavLink>   
+                        </li>
+                        <li>
+                            <NavLink
+                                activeClassName="active"
+                                className="link"
+                                exact
+                                to="/Servicios"
+                            > <p>Servicios</p> </NavLink>   
+                        </li>
+                        <li>
+                            <NavLink
+                                activeClassName="active"
+                                className="link"
+                                exact
+                                to="/contacto"
+                            > <p>Contacto</p> </NavLink>   
+                        </li>
+                    </ul>
                 </div>
             </div>  
         </>

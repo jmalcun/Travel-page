@@ -46,7 +46,7 @@ export const FormHotel = ({setBusqueda}) => {
         <>
             
                 <form className="formulario" onSubmit={handleSubmit}>
-                    <label>Destination</label>
+                    <label>Destino</label>
                     <input 
                         type="text"
                         name="destino"
@@ -54,14 +54,14 @@ export const FormHotel = ({setBusqueda}) => {
                         onChange={handleInputChange}
                         placeholder="Country, City"
                         />
-                    <label>Entry date</label>
+                    <label>Fecha de entrada</label>
                     <input 
                         type="date"
                         name="entrada"
                         value={entrada}
                         onChange={handleInputChange}
                     />
-                    <label>Departure date</label>
+                    <label>Fecha de salida</label>
                     <input 
                         type="date"
                         name="salida"
@@ -69,7 +69,7 @@ export const FormHotel = ({setBusqueda}) => {
                         onChange={handleInputChange}
                     />
                     <div className="habitaciones">
-                        <label>Adults</label>
+                        <label>Adultos</label>
                         <select name="adultos" value={adultos} onChange={handleInputChange}>
                             <option value="-">0</option>
                             <option value="1">1</option>
@@ -77,7 +77,7 @@ export const FormHotel = ({setBusqueda}) => {
                             <option value="3">3</option>
                             <option value="4">4</option>
                         </select>
-                        <label>Childrens</label>
+                        <label>Menores</label>
                         <select name="niños" value={niños} onChange={handleInputChange}>
                             <option value="-">0</option>
                             <option value="1">1</option>
@@ -88,7 +88,7 @@ export const FormHotel = ({setBusqueda}) => {
                     <button 
                     className="btn" 
                     type="submit"
-                    >Search Hotels
+                    >Buscar hotel
                     </button>           
                 </form>
              

@@ -23,7 +23,7 @@ export const FindHotel = () => {
                                 </div>     
                             </div> 
                             <div className="form-hotel-page">
-                                <h1 className="titulo">Find your hotel</h1>
+                                <h1 className="titulo">Encontra tu hotel</h1>
                                 <FormHotel setBusqueda={setBusqueda}/>
                             </div>  
                         </div>

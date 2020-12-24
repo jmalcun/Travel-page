@@ -11,14 +11,14 @@ export const HomeScreen = () => {
                     <Menu  />
                     <div className="center">
                          <WelcomePage />
-                        <footer class="footer">
-                            <div class="footer-description">
-                                <p>GOOD NEWS! WE HAVE 4 FREE ROOMS FOR YOUR SELECTED DATES!</p>
-                            </div>
-                            <button class="btn">BOOK NOW</button>
-                        </footer>  
+                       
                     </div>     
-                </div>  
+                </div>
+                <footer class="footer">
+                            
+                    <p>© 2019— JM travel </p>
+                            
+                </footer>    
             </div>
         </>
     )

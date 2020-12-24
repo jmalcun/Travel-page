@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 
 *{
     box-sizing: border-box;
@@ -51,6 +52,61 @@ body{
     text-align: center;
 }
 
+.nosotros{
+    font-family: 'Crimson Text';
+    font-size: 70px;
+    color: #0f0f0f;
+    text-align: center;
+}
+
+.nosotros-img{
+    margin-left: 200px;
+    height: 75%;
+    width: 70%;
+}
+
+.nosotros-p{
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 20px;
+}
+
+.nosotros-footer p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-top: 55px;
+}
+
+.redes{
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.redes i{
+    font-size: 30px;
+    margin-right: 15px;
+    padding-left: 165px;
+}
+
+.redes p{
+    padding-top: 10px;
+}
+
+.color-whatsap{
+    color: green;
+}
+
+.color-instagram{
+    color: #cf3c32;
+}
+
+.color-correo{
+    color: rgb(16, 16, 179);
+}
+
 /*HEADER*/
 .header{
     width: 100%;
@@ -59,9 +115,10 @@ body{
 }
 
 .logo{
-    width: 20.4%;
+    width: 70%;
     display: flex;
     align-items: center;
+    justify-content: center;
     animation: logo 1.5s ease;   
 }
 
@@ -74,68 +131,50 @@ body{
     }
 }
 
+.logo h3{
+    font-size: 70px;
+    color: white;
+    font-family: 'Dancing Script';
+    letter-spacing: 5px;
+
+}
+
 .logo div{
     margin-left: 35px;
 }
 
-/*BUSQUEDA*/
-.busqueda{
-    width: 40%;
-    display: flex;
-    align-items: center;
-}
-
-.busqueda input{
-    width: 479px;
-    height: 36px;
-    background: #EEEEEE;
-    border-radius: 23px;
-    padding-left: 15px;
-    outline: none;
-    border: none;
-}
-
-/*USUARIO*/
+/*NAVBAR*/
 .company-details{
     width: 40%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: relative;
+    justify-content: space-around;
     padding-right: 19px;
 }
 
-.company-details p{
-    color: white;
-    font-size: 25px;
-    animation: details 1.5s ease;
-}
-
-@keyframes details{
-    from{
-        transform: translateX(100%);
-    }
-    to{
-        transform: translateX(0%);
-    }
-}
-
-.photo-perfil{
+.company-details ul{
+    list-style: none;
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.photo-perfil h3{
-    font-size: 25px;
+.company-details ul li{
+    margin-right: 45px;
+}
+
+.company-details ul li p{
+    font-size: 20px;
     color: white;
+}
+
+.company-details ul li p:hover{
+    color: lightskyblue;
 }
 
 
 /*CENTER-PAGE*/
 .center-page{
     width: 100%;
-    height: 810px;
+    
     display: flex;
 }
 
@@ -182,7 +221,6 @@ body{
 /*CENTER*/
 .center{
     width: 80%;
-    height: 810px;
     display: flex;
     flex-direction: column;
     margin-top: 25px;
@@ -213,11 +251,11 @@ body{
 
 .welcome h1{
     font-family: 'Crimson Text';
-    font-size: 80px;
-    color: #131010;
+    font-size: 50px;
+    color: #0b3ba5;
     text-align: center;
     padding-top: 20px;
-    animation: traslado 1s ease;
+    animation: traslado 3s ease;
 }
 
 @keyframes traslado{
@@ -227,10 +265,6 @@ body{
     to{
         transform: translateY(0%);
     }
-}
-
-.welcome span{
-    color: white;
 }
 
 .choices{
@@ -247,7 +281,7 @@ body{
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-    border: 4px solid #4E4E4E;
+    border: 4px solid #0b3ba5;
     cursor: pointer;
 }
 
@@ -568,23 +602,15 @@ body{
 /*FIND-TOURS*/
 .find-tours{
     width: 97%;
-    height: 50%;
+    height: 100%;
     background-image: url('../assets/imgs/tours.jpg');
     background-size: 100% 100% ;
     opacity: 0.8;
     margin-left: 20px;
-    margin-top: 22px;
 }
 
-.find-tours h1{
-    font-family: 'Crimson Text';
-    font-size: 70px;
-    color: #7a7a7a;
-    text-align: center;
-    padding-top: 50px;
-}
 
-.find-tours input{
+.tour-input{
     width: 479px;
     height: 36px;
     background: #EEEEEE;
@@ -592,7 +618,8 @@ body{
     padding-left: 15px;
     outline: none;
     border: none;
-    margin-left: 297px;
+    margin-left: 32%;
+    margin-bottom: 25px;
 }
 
 
@@ -684,17 +711,16 @@ body{
 /*FOOTER*/
 .footer{
     width: 100%;
-    height: 143px;
+    height: 100px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .footer p{
     font-weight: 300;
     font-size: 18px;
     line-height: 21px;
-    color: white;
+    color: rgba(117, 111, 111, 0.959);
+    padding-left: 100px;
 }
 
