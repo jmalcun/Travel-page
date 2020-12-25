@@ -27,7 +27,7 @@ export const Informacion = () => {
                             <h4>Porque elegir JM travel</h4>
                         </div>
                         <div className="card-description">
-                            <p className="description-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pellentesque nisl nec tortor lobortis, id feugiat odio suscipit. Sed eros tortor, rutrum ac vestibulum eu, aliquam sit amet lacus. Nam vel auctor quam. Sed elementum metus ultrices dolor condimentum rhoncus. Curabitur velit turpis, gravida quis iaculis vel, ornare ac mauris. Mauris vestibulum elit ligula, nec placerat mi efficitur 
+                            <p className="description-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pellentesque nisl nec tortor lobortis, id feugiat odio suscipit. Sed eros tortor, rutrum ac vestibulum eu, aliquam sit amet lacus. Nam vel auctor quam. Sed elementum metus ultrices dolor condimentum rhoncus. Curabitur velit turpis, gravida quis iaculis vel, ornare ac mauris.
                             </p>
                         </div>
                     </div>
