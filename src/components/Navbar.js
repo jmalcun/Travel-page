@@ -21,6 +21,11 @@ export const Navbar = () => {
                     </div>
                 </div>
                 <div className="company-details">
+                    <input type="checkbox" id="cbox1" />
+                    <label for="cbox1">
+                        <i  class="fa fa-bars icono1"></i>
+                        <i  class="fas fa-times icono2"></i>
+                    </label>    
                     <ul>
                         <li>
                             <NavLink

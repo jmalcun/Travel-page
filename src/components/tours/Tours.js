@@ -25,8 +25,11 @@ export const Tours = () => {
                             type="search"
                             placeholder="City"
                         />
-                    </div>      
+                        
                 </div> 
+                     
+            </div> 
+                 
         </>
     )
 }

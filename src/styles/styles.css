@@ -19,6 +19,10 @@ body{
 }
 
 /*GENERALES*/
+.mr-10{
+    margin-right: 10px;
+}
+
 .color-blue{
     background: #7559E8;
 }
@@ -122,7 +126,7 @@ body{
 /*HEADER*/
 .header{
     width: 100%;
-    height: 90px;
+    
     display: flex;
 }
 
@@ -162,6 +166,18 @@ body{
     align-items: center;
     justify-content: space-around;
     padding-right: 19px;
+}
+
+#cbox1{
+    visibility: hidden;
+}
+
+.icono1{
+    visibility: hidden;
+}
+
+.icono2{
+    visibility: hidden;
 }
 
 .company-details ul{
@@ -509,23 +525,22 @@ body{
 
 .form-data h4{
     font-family: 'Crimson Text';
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
-    
+    margin-right: 12px;
 }
 
 .form-data p{
     font-family: 'Crimson Text';
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     color: #7fbfe4;
+    padding-top: 4px;
 }
 
-.pasajeros{
-    margin:  0 auto;
-    width: 50%;
+.datos{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 /*CARD-HOTEL*/
@@ -784,3 +799,424 @@ body{
     padding-left: 100px;
 }
 
+@media only screen and (min-width: 471px) and (max-width: 900px) {
+
+    .header{
+        flex-direction: column;
+        overflow: hidden;
+    }
+    
+    .logo{
+        width: 100%;
+        justify-content: normal;
+        padding-left: 15px;
+    }
+
+    .logo div{
+        margin-left: 3px;
+    }
+
+
+    .company-details{
+        display: block;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .icono1{
+        visibility: visible;
+        margin-left: 90%;
+        font-size: 20px;
+        position: absolute;
+        margin-top: -40px;
+    }
+
+    .company-details ul {
+        display: none;
+        width: 100%;
+        background-color: darkblue;
+        text-align: left; 
+        padding: 8px;
+        margin: 0px;  
+    }
+
+    #cbox1:checked ~ ul{
+        display: block;
+        text-decoration: none;
+        margin-top: 5px;
+        animation: movimiento 1.2s ease;
+    }
+
+    @keyframes movimiento {
+        from{
+            transform: translateX(200%);
+        }
+        to{
+            transform: translateX(0%);
+        }
+    }
+    
+    #cbox1:checked ~  ul li{
+        display: block;
+        text-decoration: none;
+        margin-bottom: 20.5px;
+    }
+    
+    #cbox1:checked ~ ul li:first-child{
+        margin-top: 14px;
+    }
+
+    #cbox1:checked ~ ul li a{
+        text-decoration: none;
+        font-size: 16px;
+        color: #FFFFFF;
+        line-height: 28px;    
+    }
+
+    #cbox1:checked + label .icono1{
+        opacity: 0;    
+    }
+
+    #cbox1:checked + label .icono2{
+        visibility: visible;
+        margin-left: 90%;
+        font-size: 20px;
+        position: absolute;
+        margin-top: -40px;
+    }
+
+    /*CENTER*/    
+    .center-page{
+        flex-direction: column;
+    }
+
+    .menu{
+        display: flex;
+        width: 100%;
+        height: 63px;
+        box-shadow: none;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+
+    .menu-items{
+        padding-left: 10px;
+        margin-top: 0;
+    }
+
+    .menu-items img{
+        margin-right: 5px;
+    }
+
+    .center{
+        width: 100%;
+    }
+
+    .ofertas{
+        flex-direction: column;
+        margin-left: 10%;
+        margin-right: 10%;
+        align-items: center;
+    }
+
+    .ofertas img {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 75%;
+        height: 250px;
+    }
+
+    .informacion{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .subtitulo{
+        font-size: 50px;
+        margin-top: 50px;
+    }
+
+     /*HOTELES AND MORE*/
+     .center-find{
+        flex-direction: column;
+    }
+
+    .center-find-1{
+        width: 100%;
+    }
+
+    .find-hotel{
+        margin-left: 1%;
+    }
+
+    .form-data{
+        height: 260px;
+    }
+
+    .form-data h4{
+        font-size: 25px;
+        margin-right: 12px;
+    }
+
+    .form-data p{
+        color: darkblue;
+        font-size: 25px;
+        padding-top: 0;
+    }
+
+    .pasajeros{
+        width: 100%;
+    }
+
+    .card-hotel button{
+        margin-top: 7%;
+    }
+
+    /*VUELOS*/
+    .find-flight{
+        margin-left: 1%;
+    }
+
+    /*AUTOS*/
+    .find-car{
+        margin-left: 1%;
+    }
+
+    .hora{
+        width: 15%;
+        padding-left: 5px;
+    }
+
+    /*TOURS*/
+    .find-tours{
+        margin-left: 1%;
+    }
+
+    .tour-input{
+        width: 50%;
+        margin-left: 25%;
+    }
+}
+
+@media only screen and (min-width: 319px) and (max-width: 470px) {
+
+    .header{
+        flex-direction: column;
+        overflow: hidden;
+    }
+    
+    .logo{
+        width: 100%;
+        justify-content: normal;
+        padding-left: 15px;
+    }
+
+    .logo div{
+        margin-left: 3px;
+    }
+
+    .logo h3{
+        font-size: 60px;
+    }
+
+
+    .company-details{
+        display: block;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .icono1{
+        visibility: visible;
+        margin-left: 85%;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -34px;
+    }
+
+    .company-details ul {
+        display: none;
+        width: 100%;
+        background-color: darkblue;
+        text-align: left; 
+        padding: 8px;
+        margin: 0px;  
+    }
+
+    #cbox1:checked ~ ul{
+        display: block;
+        text-decoration: none;
+        margin-top: 5px;
+        animation: movimiento 1s ease;
+    }
+
+    @keyframes movimiento {
+        from{
+            transform: translateX(200%);
+        }
+        to{
+            transform: translateX(0%);
+        }
+    }
+    
+    #cbox1:checked ~  ul li{
+        display: block;
+        text-decoration: none;
+        margin-bottom: 20.5px;
+    }
+    
+    #cbox1:checked ~ ul li:first-child{
+        margin-top: 14px;
+    }
+
+    #cbox1:checked ~ ul li a{
+        text-decoration: none;
+        font-size: 16px;
+        color: #FFFFFF;
+        line-height: 28px;    
+    }
+
+    #cbox1:checked + label .icono1{
+        opacity: 0;    
+    }
+
+    #cbox1:checked + label .icono2{
+        visibility: visible;
+        margin-left: 85%;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -34px;
+    }
+    
+    /*SERVICIOS*/
+    .redes i{
+        padding-left: 0;
+    }
+    
+    /*HOME SCREEN AND WELCOME*/
+    .center-page{
+        flex-direction: column;
+    }
+
+    .menu{
+        display: flex;
+        width: 100%;
+        height: 60px;
+        box-shadow: none;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+    .menu-items{
+        padding-left: 10px;
+        margin-top: 1%;
+    }
+
+    .menu-items img{
+        margin-right: 5px;
+    }
+
+    .menu-items p{
+        display: none;
+    }
+
+    .center{
+        width: 100%;
+    }
+
+    .ofertas{
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+        align-items: center;
+    }
+
+    .ofertas img {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 90%;
+        height: 250px;
+    }
+
+    .informacion{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .subtitulo{
+        font-size: 50px;
+        margin-top: 50px;
+        padding-right: 20px;
+    }
+
+    /*HOTELES AND MORE*/
+    .center-find{
+        flex-direction: column;
+    }
+
+    .center-find-1{
+        width: 100%;
+    }
+
+    .find-hotel{
+        margin-left: 1%;
+    }
+
+    .form-data{
+        height: 260px;
+    }
+
+    .form-data h4{
+        font-size: 20px;
+        margin-right: 12px;
+    }
+
+    .form-data p{
+        color: darkblue;
+        font-size: 20px;
+        padding-top: 0;
+    }
+
+    .pasajeros{
+        width: 100%;
+    }
+
+    .card-hotel button{
+        margin-top: 7%;
+    }
+
+    /*VUELOS*/
+    .find-flight{
+        margin-left: 1%;
+    }
+
+    /*AUTOS*/
+    .find-car{
+        margin-left: 1%;
+    }
+
+    .hora{
+        width: 15%;
+        padding-left: 5px;
+    }
+
+    /*TOURS*/
+    .find-tours{
+        margin-left: 1%;
+    }
+
+    .tour-input{
+        width: 50%;
+        margin-left: 25%;
+    }
+}

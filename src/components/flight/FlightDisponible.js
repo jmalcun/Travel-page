@@ -29,17 +29,25 @@ export const FlightDisponible = ({dataVuelo}) => {
                             <Menu/>
                             <div className="center-find-1">
                                 <div className="form-data">
-                                    <h4>Origen:</h4>
-                                    <p>{origenVuelo}</p>
-                                    <h4>Destino:</h4>
-                                    <p>{destinoVuelo}</p>
-                                    <h4>Fecha de salida:</h4>
-                                    <p>{fechaIda}</p>
-                                    <h4>Fecha de regreso:</h4>
-                                    <p>{fechaVuelta}</p>
-                                    <h4>Pasajeros:</h4>
-                                    <div className="pasajeros">
-                                        <p>{pasajerosMayores} Adultos</p><p>{pasajerosMenores} Menores</p>
+                                    <div className="datos">
+                                        <h4>Origen:</h4>
+                                        <p>{origenVuelo}</p>
+                                    </div>
+                                    <div className="datos">
+                                        <h4>Destino:</h4>
+                                        <p>{destinoVuelo}</p>
+                                    </div>
+                                    <div className="datos">
+                                        <h4>Fecha de salida:</h4>
+                                        <p>{fechaIda}</p>
+                                    </div>
+                                    <div className="datos">
+                                        <h4>Fecha de regreso:</h4>
+                                        <p>{fechaVuelta}</p>
+                                    </div>
+                                    <div className="datos">
+                                        <h4>Pasajeros:</h4>
+                                        <p className="mr-10">{pasajerosMayores} Adultos</p><p className="mr-10">y</p><p>{pasajerosMenores} Menores</p>
                                     </div> 
                                 </div> 
                             </div>     

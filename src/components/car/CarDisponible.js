@@ -28,17 +28,25 @@ export const CarDisponible = ({auto}) => {
                             <Menu/>
                             <div className="center-find-1">
                                 <div className="form-data">
-                                    <h4>Lugar de retiro:</h4>
-                                    <p>{lugarRetiro}</p>
-                                    <h4>Fecha y hora de retiro:</h4>
-                                    <div className="pasajeros">
-                                        <p>{fechaIda}</p><p>{horaRetiro}hs</p>
+                                    <div className="datos">
+                                        <h4>Lugar de retiro:</h4>
+                                        <p>{lugarRetiro}</p>
                                     </div>
-                                    <h4>Lugar de devolucion</h4>
-                                    <p>{lugarDevolucion}</p>
-                                    <h4>Fecha y hora de devolucion:</h4>
-                                    <div className="pasajeros">
-                                        <p>{fechaVuelta}</p><p>{horaDevolucion}hs</p>
+                                    <div className="datos">
+                                        <h4>Fecha:</h4>
+                                        <p className="mr-10">{fechaIda}</p>
+                                        <h4>Hora:</h4>
+                                        <p>{horaRetiro}hs</p>
+                                    </div>
+                                    <div className="datos">
+                                        <h4>Lugar de devolucion:</h4>
+                                        <p>{lugarDevolucion}</p>
+                                    </div>
+                                    <div className="datos">
+                                        <h4>Fecha:</h4>
+                                        <p className="mr-10">{fechaVuelta}</p>
+                                        <h4>Hora:</h4>
+                                        <p>{horaDevolucion}hs</p>
                                     </div>
                                 </div> 
                             </div>     

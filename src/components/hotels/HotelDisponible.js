@@ -27,15 +27,21 @@ export const HotelDisponible = ({busqueda}) => {
                             <Menu/>
                             <div className="center-find-1">
                                 <div className="form-data">
-                                    <h4>Destino:</h4>
-                                    <p>{destino}</p>
-                                    <h4>Fecha de salida:</h4>
-                                    <p>{fechaEntrada}</p>
-                                    <h4>Fecha de regreso:</h4>
-                                    <p>{fechaSalida}</p>
-                                    <h4>Pasajeros:</h4>
-                                    <div className="pasajeros">
-                                        <p>{adultos} Adultos</p><p>{niños} Menores</p>
+                                    <div className="datos">
+                                        <h4>Destino:</h4>
+                                        <p>{destino}</p>
+                                    </div>
+                                    <div className="datos">
+                                        <h4>Fecha de salida:</h4>
+                                        <p>{fechaEntrada}</p>
+                                    </div>
+                                    <div className="datos">
+                                        <h4>Fecha de regreso:</h4>
+                                        <p>{fechaSalida}</p>
+                                    </div>
+                                    <div className="datos">
+                                        <h4>Pasajeros:</h4>
+                                        <p className="mr-10">{adultos} Adultos</p><p className="mr-10">y</p><p>{niños} Menores</p>
                                     </div> 
                                 </div> 
                             </div>     

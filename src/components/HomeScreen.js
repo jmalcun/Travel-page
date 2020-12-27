@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Menu } from './Menu'
 import { WelcomePage } from './WelcomePage'
-import oferta1 from '../assets/imgs/oferta1.jpg'
+import oferta1 from '../assets/imgs/oferta123.jpg'
 import oferta2 from '../assets/imgs/oferta2.jpg'
 import oferta3 from '../assets/imgs/oferta3.jpg'
 import { Informacion } from './Informacion'
