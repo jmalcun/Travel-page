@@ -551,7 +551,6 @@ body{
 
 .card-hotel{
     width: 250px;
-    height: 300px;
     border: 1px solid #4E4E4E;
     border-radius: 20px;
     margin-right: 15px;
@@ -577,6 +576,7 @@ body{
 .card-description h4{
     font-size: 22px;
     padding-left: 5px;
+    margin-bottom: 3px;
 }
 
 .description-hotel{
@@ -605,6 +605,138 @@ body{
 .card-hotel button:hover{
     transform: scale(1.1);
     background-color: #071e4d;
+}
+
+/*HOTEL SELECT*/
+.center-select{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-container{
+    width: 95%;
+    height: 200px;
+    display: flex;
+}
+
+.img-container img{
+    width: 33.3%;
+    height: 100%;
+    margin-right: 3px;
+    border: 1px solid lightgrey;
+}
+
+.hotel-name{
+    font-family: 'Crimson Text';
+    font-size: 60px;
+    color: #0b3ba5;
+    margin-top: 46px;
+    padding-left: 45px;
+}
+
+.select-description p{
+    padding-left: 5%;
+    padding-right: 2%;
+    padding-top: 15px;
+    font-family: 'Crimson Text';
+    font-size: 22px;
+    color: rgb(43, 44, 46);
+}
+
+.servicio-title{
+    padding-left: 275px;
+    padding-top: 40px;
+    font-family: 'Crimson Text';
+    font-size: 35px;
+}
+
+.servicios-container{
+    display: flex;
+}
+
+.servicios-container .servicios:first-child{
+    padding-left: 350px;
+}
+
+.servicios{
+    margin-top: 30px;
+    margin-right: 35px;
+}
+
+.servicio{
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.servicio i{
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.pagos{
+    padding-left: 350px;
+    margin-top: 30px;
+}
+
+.pagos p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.pagos p:nth-child(1){
+    padding-top: 10px;
+}
+
+.pagos span{
+    color: white;
+}
+
+.tarjetas{
+    margin-top: 15px;
+    display: flex;
+}
+
+.tarjetas i{
+    margin-right: 15px;
+    padding-left: 8px;
+    font-size: 40px;
+}
+
+.btn-container{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.form-reserva{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.form-reserva label{
+    color: darkblue;
+    font-family: 'Crimson Text';
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.form-reserva input{
+    border-radius: 20px;
+    outline: none;
+    padding-left: 15px;
+    height: 25px;
+}
+
+.form-reserva select{
+    width: 25%;
+    outline: none;
+    border-radius: 20px;
 }
 
 /*FIND-FLIGHT*/
@@ -973,9 +1105,7 @@ body{
         width: 100%;
     }
 
-    .card-hotel button{
-        margin-top: 7%;
-    }
+    
 
     /*VUELOS*/
     .find-flight{
@@ -1191,9 +1321,6 @@ body{
         width: 100%;
     }
 
-    .card-hotel button{
-        margin-top: 7%;
-    }
 
     /*VUELOS*/
     .find-flight{

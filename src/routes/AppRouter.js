@@ -14,6 +14,7 @@ import { FlightDisponible } from '../components/flight/FlightDisponible';
 import { HomeScreen } from '../components/HomeScreen';
 import { FindHotel } from '../components/hotels/FindHotel';
 import { HotelDisponible } from '../components/hotels/HotelDisponible';
+import { HotelSelect } from '../components/hotels/HotelSelect';
 import { Navbar } from '../components/Navbar';
 import { Nosotros } from '../components/Nosotros';
 import { Servicios } from '../components/Servicios';
@@ -38,6 +39,7 @@ export const AppRouter = () => {
                     <Route exact path="/car" component={CarRental}/>
                     <Route exact path="/tours" component={Tours}/>
                     <Route exact path="/find-hotel" component={HotelDisponible} />
+                    <Route exact path="/find-hotel/:hotelId/:fechaIngreso/:fechaSalida" component={HotelSelect} />
                     <Route exact path="/find-flight" component={FlightDisponible} />
                     <Route exact path="/find-car" component={CarDisponible} />
                     <Redirect to="/home"/>

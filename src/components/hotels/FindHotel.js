@@ -6,7 +6,7 @@ import { HotelDisponible } from './HotelDisponible'
 export const FindHotel = () => {
     
     
-    const [busqueda, setBusqueda] = useState({})
+    const [busqueda, setBusqueda] = useState({ })
 
     console.log(busqueda)
     
@@ -27,12 +27,7 @@ export const FindHotel = () => {
                                 <FormHotel setBusqueda={setBusqueda}/>
                             </div>  
                         </div>
-            }
-        
-        
-            
-        
-            
+            }   
 
         </>
     )

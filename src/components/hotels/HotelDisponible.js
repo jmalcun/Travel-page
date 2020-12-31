@@ -1,12 +1,13 @@
 import moment from 'moment'
 import React, { useState } from 'react'
+import { useFetchHoteles } from '../../hooks/useFetchHoteles'
 import { Loading } from '../Loading'
 import { Menu } from '../Menu'
 import { CardHotel } from './CardHotel'
 
 export const HotelDisponible = ({busqueda}) => {
 
-    const { destino,entrada,salida,adultos,niños} = busqueda
+    const { destino, entrada, salida, adultos, niños } = busqueda
 
     const [loading, setLoading] = useState(true)
 
@@ -16,6 +17,8 @@ export const HotelDisponible = ({busqueda}) => {
     setTimeout(() => {
         setLoading(false)    
     }, 2000);
+
+    const hotels = useFetchHoteles(destino)
 
     return (
         <>
@@ -32,11 +35,11 @@ export const HotelDisponible = ({busqueda}) => {
                                         <p>{destino}</p>
                                     </div>
                                     <div className="datos">
-                                        <h4>Fecha de salida:</h4>
+                                        <h4>Fecha de entrada:</h4>
                                         <p>{fechaEntrada}</p>
                                     </div>
                                     <div className="datos">
-                                        <h4>Fecha de regreso:</h4>
+                                        <h4>Fecha de salida:</h4>
                                         <p>{fechaSalida}</p>
                                     </div>
                                     <div className="datos">
@@ -49,7 +52,12 @@ export const HotelDisponible = ({busqueda}) => {
                         <div className="form-hotel-page">
                             <h1 className="titulo">Elegi tu hotel</h1>
                             <div className="card-contain">
-                                <CardHotel />
+                                {
+                                    hotels.map(h =>(
+                                        <CardHotel key={h.id} {...h} fechaEntrada={fechaEntrada} fechaSalida={fechaSalida}/>
+                                    ))
+                                }
+                                
                             </div>
                         
                         </div>  

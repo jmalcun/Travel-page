@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Swal from 'sweetalert2'
+import { useFetchHoteles } from '../../hooks/useFetchHoteles'
 
 
 export const FormHotel = ({setBusqueda}) => {
@@ -35,7 +36,7 @@ export const FormHotel = ({setBusqueda}) => {
     }
 
     const formValidator = () =>{
-        if(destino === '' || entrada === '' || salida === '' || adultos === '' || niños === '' ){
+        if(destino === '' || entrada === '' || salida === '' || adultos === '' ){
             return false
         }else{
             return true
@@ -71,7 +72,7 @@ export const FormHotel = ({setBusqueda}) => {
                     <div className="habitaciones">
                         <label>Adultos</label>
                         <select name="adultos" value={adultos} onChange={handleInputChange}>
-                            <option value="-">0</option>
+                            <option value="-">-</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -79,7 +80,7 @@ export const FormHotel = ({setBusqueda}) => {
                         </select>
                         <label>Menores</label>
                         <select name="niños" value={niños} onChange={handleInputChange}>
-                            <option value="-">0</option>
+                            <option value="0">-</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
