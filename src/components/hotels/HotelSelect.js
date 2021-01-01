@@ -30,14 +30,22 @@ export const HotelSelect = () => {
         <>
             
             <div className="container">
-                <div className="center-find">
+                <div className="center-find-selectt">
                     <Menu/>
                     <div className="center-select">
                             <h1 className="hotel-name">{name}</h1>
-                           <div className="img-container">
-                                <img src={photo[1]} alt="img-1"/>
-                                <img src={photo[2]} alt="img-2"/>
-                                <img src={photo[3]} alt="img-3"/>
+                            <div className="img-container">
+                                <div className="img-img">
+                                    <img src={photo[1]} alt="img-1"/>
+                                </div>
+                                <div className="img-img">
+                                    <img src={photo[2]} alt="img-2"/>
+                                </div>
+                                
+                                <div className="img-img">
+                                    <img src={photo[3]} alt="img-3"/>
+                                </div>
+                                
                             </div>
                             <div className="select-description">
                                 <p>{description}</p>

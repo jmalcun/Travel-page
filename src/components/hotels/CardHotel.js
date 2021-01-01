@@ -15,7 +15,10 @@ export const CardHotel = ({id,name, photo, description, city, country, habitacio
                     <p className="description-hotel">hotel de {stars} estrellas</p>
                     <p className="description-hotel">{adress}</p>
                 </div>
-                <Link to={`./find-hotel/${id}/${fechaEntrada}/${fechaSalida}`} className="link"><button> ver detalles</button> </Link>
+                <div className="footer-card">
+                    <Link to={`./find-hotel/${id}/${fechaEntrada}/${fechaSalida}`} className="link"><button> ver detalles</button> </Link>
+                </div>
+                
             </div>  
         </>
     )

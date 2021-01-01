@@ -29,32 +29,43 @@ export const DatosReserva = () => {
 
     const handleBuyClick = (e) =>{
         e.preventDefault();
-        Swal.fire({
-            title: 'Datos de la Reserva',
-            text:`
-            Titular: ${nombreTitular}                    -
-            Habitacion: doble                            -
-            Forma de pago: ${formaPago}                  -
-            Fecha de ingreso: ${fechaIngreso}            -
-            Fecha de Salida: ${fechaSalida}              -`,
-            showDenyButton: true,
-            confirmButtonText: `Confirmar`,
-            denyButtonText: `Cancelar`,
-          }).then((result) => {
-            /* Read more about isConfirmed, isDenied below */
-            if (result.isConfirmed) {
-              Swal.fire('Su Reserva fue confirmada', `Se envió a ${email} el Vaucher correspondiente`, 'success')
-              setTimeout(() => { 
-                  setOk(true)
-              }, 2000);
-            } else if (result.isDenied) {
-              Swal.fire('Su reserva a sido cancelada', '', 'info')
-            }
-          })
+        if(validaciones()){
+            Swal.fire({
+                title: 'Datos de la Reserva',
+                text:`
+                Titular: ${nombreTitular}                    -
+                Habitacion: doble                            -
+                Forma de pago: ${formaPago}                  -
+                Fecha de ingreso: ${fechaIngreso}            -
+                Fecha de Salida: ${fechaSalida}              -`,
+                showDenyButton: true,
+                confirmButtonText: `Confirmar`,
+                denyButtonText: `Cancelar`,
+              }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                  Swal.fire('Su Reserva fue confirmada', `Se envió a ${email} el Vaucher correspondiente`, 'success')
+                  setTimeout(() => { 
+                      setOk(true)
+                  }, 2000);
+                } else if (result.isDenied) {
+                  Swal.fire('Su reserva a sido cancelada', '', 'info')
+                }
+              })
+        }else {
+            Swal.fire('Error', 'todos los campos son obligatorios', 'error')
+        }
+       
     }
 
     if(ok){
         return <Redirect to="/home"/>
+    }
+
+    const validaciones = () =>{
+        if(nombreTitular === '' || email === '' || telefono === ''){
+            return false
+        }else return true
     }
 
 

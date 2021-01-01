@@ -276,6 +276,11 @@ body{
     margin-top: 25px;
 }
 
+.center-find-selectt{
+    width: 100%;
+    display: flex;
+}
+
 /*WELCOME-PAGE*/
 .welcome{
     width: 100%;
@@ -555,6 +560,8 @@ body{
     border-radius: 20px;
     margin-right: 15px;
     margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-img{
@@ -596,7 +603,8 @@ body{
     background-color: #3766c2;
     cursor: pointer;
     margin: 0 auto;
-    margin-top: 25px;
+    margin-top: 15px;
+    margin-bottom: 10px;
     outline: none;
     display: flex;
     justify-content: center;
@@ -617,15 +625,19 @@ body{
 
 .img-container{
     width: 95%;
-    height: 200px;
     display: flex;
 }
 
-.img-container img{
+.img-img{
     width: 33.3%;
-    height: 100%;
+    height: 200px;
     margin-right: 3px;
     border: 1px solid lightgrey;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
 }
 
 .hotel-name{
@@ -829,84 +841,6 @@ body{
     margin-bottom: 25px;
 }
 
-
-/*FOTOS*/
-.photos-container{
-    width: 100%;
-    height: 189px;
-    display: flex;
-}
-
-.photos-container img{
-    width: 319px;
-    height: 100%;
-}
-
-/*DESCRIPTION*/
-.description{
-    width: 100%;
-    height: 101px;
-    display: flex;
-}
-
-.description-detalles{
-    width: 87.5%;
-    display: flex;
-}
-
-.hotel-name{
-    width: 50%;
-    height: 101px;
-    display: flex;
-    align-items: center;
-}
-
-.hotel-name h4{
-    font-size: 24px;
-    line-height: 28px;
-    color: #8B8B8B;
-    margin-left: 46px;
-    margin-right: 20px;
-}
-
-.ubication{
-    width: 50%;
-    height: 101px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.ubication i{
-    margin-right: 10px;
-}
-
-.ubication p{
-    margin-right: 25px;
-}
-
-.puntaje{
-    background-color: #7559E8;
-    width: 12.5%;
-    height: 101px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.numero{
-    font-size: 24px;
-    line-height: 28px;
-    color: white;
-}
-
-.votes{
-    font-size: 9px;
-    line-height: 11px;
-    color: white;
-}
-
 /*CONTENIDO PRINCIPAL*/
 .contenido-principal{
     width: 100%;
@@ -1075,6 +1009,10 @@ body{
 
      /*HOTELES AND MORE*/
      .center-find{
+        flex-direction: column;
+    }
+
+    .center-find-selectt{
         flex-direction: column;
     }
 
@@ -1294,6 +1232,10 @@ body{
         flex-direction: column;
     }
 
+    .center-find-selectt{
+        flex-direction: column;
+    }
+
     .center-find-1{
         width: 100%;
     }
@@ -1319,6 +1261,40 @@ body{
 
     .pasajeros{
         width: 100%;
+    }
+
+    /*HOTEL SELECT*/
+    .img-container{
+        flex-direction: column;
+    }
+
+    .img-container img{
+        width: 100%;
+    }
+
+    .img-img{
+        width: 100%;
+        height: 200px;
+    }
+
+    .servicio-title{
+        padding-left: 10px;
+    }
+
+    .servicios-container .servicios:first-child{
+        padding-left: 20px;
+    }
+
+    .pagos{
+        padding-left: 20px;
+    }
+
+    .tarjetas i{
+        font-size: 37px;
+    }
+
+    .form-reserva select{
+        width: 50%;
     }
 
 
