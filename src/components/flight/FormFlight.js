@@ -6,13 +6,14 @@ export const FormFlight = ({setDataVuelo}) => {
     const [datos, setDatos] = useState({
         origenVuelo:'',
         destinoVuelo:'',
+        tipo:'Directo',
         ida: new Date(),
         vuelta:'',
         pasajerosMayores:'',
         pasajerosMenores:''
     })
 
-    const {origenVuelo,destinoVuelo,ida,vuelta,pasajerosMayores,pasajerosMenores} = datos
+    const {origenVuelo,destinoVuelo, tipo, ida,vuelta,pasajerosMayores,pasajerosMenores} = datos
 
 
 
@@ -80,6 +81,12 @@ export const FormFlight = ({setDataVuelo}) => {
                         value={vuelta}
                         onChange={handleInputChangeVuelo}
                     />
+                    <label>Adultos</label>
+                    <select className="select-tipo" name="tipo" value={tipo} onChange={handleInputChangeVuelo}>
+                        <option value="Directo">directo</option>
+                        <option value="1 escala">1 escala</option>
+                        <option value="2 escalas">2 escalas</option>
+                    </select>
                     <div className="habitaciones">
                         <label>Adultos</label>
                         <select name="pasajerosMayores" value={pasajerosMayores} onChange={handleInputChangeVuelo}>

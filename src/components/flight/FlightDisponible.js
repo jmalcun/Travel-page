@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { Loading } from '../Loading';
 import { Menu } from '../Menu';
 import moment from 'moment'
+import { FlyCard } from './FlyCard';
+import { filtroVuelos } from '../../helpers/filtroVuelos';
 
 export const FlightDisponible = ({dataVuelo}) => {
 
@@ -14,10 +16,12 @@ export const FlightDisponible = ({dataVuelo}) => {
     }, 2000);
 
 
-    const {origenVuelo, destinoVuelo, ida, vuelta, pasajerosMayores, pasajerosMenores} = dataVuelo
+    const {origenVuelo, destinoVuelo, tipo, ida, vuelta, pasajerosMayores, pasajerosMenores} = dataVuelo
 
     let fechaIda = moment(ida).format('DD-MM-YYYY')
     let fechaVuelta = moment(vuelta).format('DD-MM-YYYY')
+
+    const vuelo = filtroVuelos(origenVuelo, destinoVuelo, tipo)
 
     return (
         <>
@@ -54,7 +58,12 @@ export const FlightDisponible = ({dataVuelo}) => {
                         </div> 
                         <div className="form-hotel-page">
                             <h1 className="titulo">Elegi tu vuelo</h1>
-                            <div className="card-contain">
+                            <div className="card-contain-fly">
+                                {
+                                    vuelo.map( v => (
+                                        <FlyCard key={v.id} {...v} dataVuelo={dataVuelo} />
+                                    ))
+                                }
                                 
                             </div>
                         

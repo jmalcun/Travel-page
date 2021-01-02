@@ -19,6 +19,26 @@ body{
 }
 
 /*GENERALES*/
+.padd-left-35{
+    padding-left: 35px;
+}
+
+.padd-left-12{
+    padding-left: 12px;
+}
+
+.padd-left-22{
+    padding-left: 22px;
+}
+
+.padd-left-40{
+    padding-left: 40px;
+}
+
+.padd-left-57{
+    padding-left: 57px;
+}
+
 .mr-10{
     margin-right: 10px;
 }
@@ -780,6 +800,136 @@ body{
     margin-left: 297px;
 }
 
+.select-tipo{
+    width: 10%;
+    margin: 0 auto;
+    border-radius: 20px;
+    outline: none;
+}
+
+.card-contain-fly{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*CARD-VUELO*/
+.card-vuelos{
+    display: flex;
+    width: 70%;
+    margin-top: 15px;
+}
+
+.card-vuelo{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgrey;
+    margin-bottom: 15px;
+}
+
+.ida{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid lightgrey;
+}
+
+.detalles-vuelo{
+    height: 30%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.detalles-vuelo i{
+    margin-right: 5px;
+}
+
+.detalles-vuelo p{
+    padding-left: 15px;
+}
+
+
+.datos-vuelo{
+    display: flex;
+    justify-content: space-between;
+    height: 70%;
+    align-items: center;
+}
+
+.datos-vuelo h4{
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.ida-llegada{
+    display: flex;
+}
+
+.ida-llegada p{
+    margin-right: 20px;
+    font-size: 17px;
+}
+
+.ida-llegada span{
+    color: lightskyblue;
+    font-weight: 800;
+}
+
+.datos-vuelo i{
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+
+.vuelta{
+    height: 50%;
+}
+
+.precio-vuelo{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid lightgrey;
+    margin-bottom: 15px;
+}
+
+.precio-vuelo p{
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 3px;
+    padding-left: 25px;
+}
+
+.precio-vuelo span{
+    color: lightskyblue;
+}
+
+.precio-vuelo h4{
+    font-size: 22px;
+    margin-top: 15px;
+    padding-left: 25px;
+}
+
+.comprar-btn{
+    width: 80%;
+    height: 30px;
+    border-radius: 15px;
+    background: darkblue;
+    color: white;
+    margin-left: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.comprar-btn:hover{
+    transform: scale(1.1,1.1);
+}
+
 /*FIND-CAR*/
 .find-car{
     width: 97%;
@@ -1050,6 +1200,39 @@ body{
         margin-left: 1%;
     }
 
+    .card-vuelos{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card-vuelo{
+        margin-bottom: 0;
+        width: 100%;
+        height: 300px;
+    }
+
+    .detalles-vuelo p{
+        font-size: 14px;
+    }
+
+    .datos-vuelo{
+        flex-direction: column;
+    }
+
+    .ida-llegada{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .precio-vuelo{
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .precio-vuelo p{
+        font-size: 14px;
+    }
+
     /*AUTOS*/
     .find-car{
         margin-left: 1%;
@@ -1301,6 +1484,39 @@ body{
     /*VUELOS*/
     .find-flight{
         margin-left: 1%;
+    }
+
+    .card-vuelos{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card-vuelo{
+        margin-bottom: 0;
+        width: 100%;
+        height: 300px;
+    }
+
+    .detalles-vuelo p{
+        font-size: 14px;
+    }
+
+    .datos-vuelo{
+        flex-direction: column;
+    }
+
+    .ida-llegada{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .precio-vuelo{
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .precio-vuelo p{
+        font-size: 14px;
     }
 
     /*AUTOS*/
