@@ -110,7 +110,7 @@ export const HotelSelect = () => {
                     </div>
                     
                 </div> 
-                <DatosReserva />
+                <DatosReserva habitacion={habitacion} price={price}/>
                 
             </div>  
         </>

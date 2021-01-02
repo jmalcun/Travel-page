@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import { Redirect, useParams } from 'react-router-dom';
 import Swal from 'sweetalert2';
-import { Loading } from '../Loading';
 
-export const DatosReserva = () => {
+export const DatosReserva = ({habitacion, price}) => {
 
     const params = useParams();
 
@@ -34,7 +33,8 @@ export const DatosReserva = () => {
                 title: 'Datos de la Reserva',
                 text:`
                 Titular: ${nombreTitular}                    -
-                Habitacion: doble                            -
+                Habitacion: ${habitacion}                    -
+                Precio por noche: ${price}                   -
                 Forma de pago: ${formaPago}                  -
                 Fecha de ingreso: ${fechaIngreso}            -
                 Fecha de Salida: ${fechaSalida}              -`,

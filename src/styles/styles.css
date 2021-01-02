@@ -19,24 +19,8 @@ body{
 }
 
 /*GENERALES*/
-.padd-left-35{
-    padding-left: 35px;
-}
-
-.padd-left-12{
-    padding-left: 12px;
-}
-
-.padd-left-22{
-    padding-left: 22px;
-}
-
-.padd-left-40{
-    padding-left: 40px;
-}
-
-.padd-left-57{
-    padding-left: 57px;
+.padd-top-20{
+    padding-top: 20px;
 }
 
 .mr-10{

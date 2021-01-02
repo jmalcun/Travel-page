@@ -9,6 +9,7 @@ import {
 import { CarDisponible } from '../components/car/CarDisponible';
 import { CarRental } from '../components/car/CarRental';
 import { Contacto } from '../components/Contacto';
+import { ComprarVuelo } from '../components/flight/ComprarVuelo';
 import { FindFlight } from '../components/flight/FindFlight';
 import { FlightDisponible } from '../components/flight/FlightDisponible';
 import { HomeScreen } from '../components/HomeScreen';
@@ -41,6 +42,7 @@ export const AppRouter = () => {
                     <Route exact path="/find-hotel" component={HotelDisponible} />
                     <Route exact path="/find-hotel/:hotelId/:fechaIngreso/:fechaSalida" component={HotelSelect} />
                     <Route exact path="/find-flight" component={FlightDisponible} />
+                    <Route exact path="/find-flight/:vueloId/:pasajeros" component={ComprarVuelo} />
                     <Route exact path="/find-car" component={CarDisponible} />
                     <Redirect to="/home"/>
                 </Switch>

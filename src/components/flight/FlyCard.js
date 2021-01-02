@@ -1,7 +1,8 @@
 import React from 'react'
 import moment from 'moment'
+import { Link } from 'react-router-dom';
 
-export const FlyCard = ({aerolinea, origen, destino, tipoV, horaDeSalida, horaDeLlegada, origenVuelta, destinoVuelta, horaVuelta, horaLlegada, price, dataVuelo}) => {
+export const FlyCard = ({id,aerolinea, origen, destino, tipoV, horaDeSalida, horaDeLlegada, origenVuelta, destinoVuelta, horaVuelta, horaLlegada, price, dataVuelo}) => {
 
     const {origenVuelo, destinoVuelo, ida, vuelta, tipo, pasajerosMayores, pasajerosMenores} = dataVuelo;
 
@@ -53,7 +54,7 @@ export const FlyCard = ({aerolinea, origen, destino, tipoV, horaDeSalida, horaDe
                         <p>imp. y tasas <span >$ 60000</span></p>
                         <p>cargos <span >$ 4000</span></p>
                         <h4>Total <span >$ {pricetotal + 60000 + 4000}</span></h4>
-                        <button className="comprar-btn">COMPRAR</button>
+                        <Link to={`./find-flight/${id}/${pasajerosMayores-pasajerosMenores}`}><button className="comprar-btn">COMPRAR</button></Link>    
                 </div>
             </div>
             
