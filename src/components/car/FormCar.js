@@ -6,10 +6,10 @@ export const FormCar = ({setAuto}) => {
     const [carValues, setCarValues] = useState({
         lugarRetiro:'',
         fechaDeRetiro:'',
-        horaRetiro:'',
+        horaRetiro:'11',
         lugarDevolucion:'',
         fechaDevolucion:'',
-        horaDevolucion:''
+        horaDevolucion:'11'
     })
 
     const {lugarRetiro,fechaDeRetiro,horaRetiro,lugarDevolucion,fechaDevolucion,horaDevolucion} = carValues
