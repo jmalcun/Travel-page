@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/travel-page/static/css/main.cc3cd974.chunk.css",
+    "main.js": "/travel-page/static/js/main.ce274fd2.chunk.js",
+    "main.js.map": "/travel-page/static/js/main.ce274fd2.chunk.js.map",
+    "runtime-main.js": "/travel-page/static/js/runtime-main.c121a1ad.js",
+    "runtime-main.js.map": "/travel-page/static/js/runtime-main.c121a1ad.js.map",
+    "static/js/2.9540a7ba.chunk.js": "/travel-page/static/js/2.9540a7ba.chunk.js",
+    "static/js/2.9540a7ba.chunk.js.map": "/travel-page/static/js/2.9540a7ba.chunk.js.map",
+    "index.html": "/travel-page/index.html",
+    "static/css/main.cc3cd974.chunk.css.map": "/travel-page/static/css/main.cc3cd974.chunk.css.map",
+    "static/js/2.9540a7ba.chunk.js.LICENSE.txt": "/travel-page/static/js/2.9540a7ba.chunk.js.LICENSE.txt",
+    "static/media/styles.css": "/travel-page/static/media/vuelo.cca32aa8.jpg",
+    "static/media/hotelargentino1.6e15dab4.jpg": "/travel-page/static/media/hotelargentino1.6e15dab4.jpg",
+    "static/media/hotelargentino2.ad994726.jpg": "/travel-page/static/media/hotelargentino2.ad994726.jpg",
+    "static/media/hotelargentino3.19655b0a.jpg": "/travel-page/static/media/hotelargentino3.19655b0a.jpg",
+    "static/media/hotelargentino4.3e81c6a2.jpg": "/travel-page/static/media/hotelargentino4.3e81c6a2.jpg",
+    "static/media/nh1.8134aedf.jpg": "/travel-page/static/media/nh1.8134aedf.jpg",
+    "static/media/nh2.9bee3c3b.jpg": "/travel-page/static/media/nh2.9bee3c3b.jpg",
+    "static/media/nh3.68d08849.jpg": "/travel-page/static/media/nh3.68d08849.jpg",
+    "static/media/nh4.f1ea2bcf.jpeg": "/travel-page/static/media/nh4.f1ea2bcf.jpeg",
+    "static/media/oferta123.48800ad5.jpg": "/travel-page/static/media/oferta123.48800ad5.jpg",
+    "static/media/oferta2.802a7e80.jpg": "/travel-page/static/media/oferta2.802a7e80.jpg",
+    "static/media/oferta3.a077a403.jpg": "/travel-page/static/media/oferta3.a077a403.jpg",
+    "static/media/tresreyes1.d2c460d5.jpg": "/travel-page/static/media/tresreyes1.d2c460d5.jpg",
+    "static/media/tresreyes2.5cb6ae73.jpg": "/travel-page/static/media/tresreyes2.5cb6ae73.jpg",
+    "static/media/tresreyes3.6145c5fc.jpg": "/travel-page/static/media/tresreyes3.6145c5fc.jpg",
+    "static/media/tresreyes4.1ff9a76e.jpg": "/travel-page/static/media/tresreyes4.1ff9a76e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c121a1ad.js",
+    "static/js/2.9540a7ba.chunk.js",
+    "static/css/main.cc3cd974.chunk.css",
+    "static/js/main.ce274fd2.chunk.js"
+  ]
+}
