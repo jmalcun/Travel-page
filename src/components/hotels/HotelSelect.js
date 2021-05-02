@@ -1,14 +1,12 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
-import Swal from 'sweetalert2';
 import {filtroHotelById} from '../../helpers/filtroHotelById'
 import { Loading } from '../Loading';
 import { Menu } from '../Menu';
 import { DatosReserva } from './DatosReserva';
 
 export const HotelSelect = () => {
-
-
+    
     const params = useParams();
     const {hotelId} = params;
 

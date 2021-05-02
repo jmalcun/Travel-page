@@ -130,7 +130,6 @@ body{
 /*HEADER*/
 .header{
     width: 100%;
-    
     display: flex;
 }
 
@@ -156,7 +155,6 @@ body{
     color: white;
     font-family: 'Dancing Script';
     letter-spacing: 5px;
-
 }
 
 .logo div{
@@ -1462,6 +1460,10 @@ body{
 
     .form-reserva select{
         width: 50%;
+    }
+
+    .tarjetas p{
+        font-size: 16px;
     }
 
 

@@ -7,8 +7,6 @@ export const FindHotel = () => {
     
     
     const [busqueda, setBusqueda] = useState({ })
-
-    console.log(busqueda)
     
     return (
         <>

@@ -8,7 +8,7 @@ export const CardHotel = ({id,name, photo, description, city, country, habitacio
         <>
             <div className="card-hotel">
                 <div className="card-img">
-                    <img src={photo[0]} />
+                    <img src={photo[0]} alt="img"/>
                 </div>
                 <div className="card-description">
                     <h4>{name}</h4>

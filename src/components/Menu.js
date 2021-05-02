@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import casa from '../assets/iconos/casa.png'
 import avion from '../assets/iconos/avion.png'
 import llave from '../assets/iconos/llave.png'

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Swal from 'sweetalert2'
-import { useFetchHoteles } from '../../hooks/useFetchHoteles'
+
 
 
 export const FormHotel = ({setBusqueda}) => {

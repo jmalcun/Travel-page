@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Menu } from './Menu'
 import { WelcomePage } from './WelcomePage'
 import oferta1 from '../assets/imgs/oferta123.jpg'

@@ -6,11 +6,8 @@ import { Menu } from '../Menu';
 export const ComprarVuelo = () => {
 
     const params = useParams();
-
-    const {vueloId, pasajeros} = params
-
+    const {pasajeros} = params
     const [ok, setOk] = useState(false);
-
     const [datosCompra, setDatosCompra] = useState({
         pasajero1:'',
         dni:'',
@@ -24,7 +21,7 @@ export const ComprarVuelo = () => {
         fPago:'',
     })
 
-    const {pasajero1,dni, pasajero2, dni2, pasajero3,pasajero4,emailP,telefonoP,fPago} = datosCompra;
+    const {pasajero1,dni, pasajero2, dni2, pasajero3,dni3,emailP,telefonoP,fPago} = datosCompra;
 
     const [datosPago, setDatosPago] = useState({
         nombreT:'',
@@ -77,7 +74,6 @@ export const ComprarVuelo = () => {
         }else return true
     }
 
-
     return (
         <>
           <div className="container">
@@ -124,11 +120,18 @@ export const ComprarVuelo = () => {
                                          && <div>
                                                  <label>Nombre y apellido del pasajero/a</label>
                                                  <input
-                                                 type="text"
-                                                 name="pasajero3"
-                                                 value={pasajero3}
-                                                 onChange={handleDatosChange}
+                                                    type="text"
+                                                    name="pasajero3"
+                                                    value={pasajero3}
+                                                    onChange={handleDatosChange}
                                                  />
+                                                <label>DNI del acompañante</label>
+                                                <input
+                                                    type="number"
+                                                    name="dni3"
+                                                    value={dni3}
+                                                    onChange={handleDatosChange}
+                                                />
                                              </div>   
                                     }
                                     <label>Email del titular</label>
